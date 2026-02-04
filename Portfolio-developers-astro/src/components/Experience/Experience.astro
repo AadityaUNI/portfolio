@@ -1,0 +1,11 @@
+---
+import CardProyect from "../Proyect/CardProyect.astro";
+import Section from "../UI/Section.astro";
+import { EXPERIENCE } from "../../data/experience";
+---
+
+<Section id="experience" title="Experience" titleClassName="mb-24">
+    <div class="flex flex-col gap-y-32">
+        {EXPERIENCE.map((item) => <CardProyect {...item} />)}
+    </div>
+</Section>
